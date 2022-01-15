@@ -1,5 +1,5 @@
 ﻿"""
-This is an example of using the k-nearest-neighbors (KNN) algorithm for face recognition.
+This is an using the k-nearest-neighbors (KNN) algorithm for face recognition.
 When should I use this example?
 This example is useful when you wish to recognize a large set of known people,
 and make a prediction for an unknown person in a feasible computation time.
@@ -34,9 +34,6 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 def train(train_dir, model_save_path=None, n_neighbors=None, knn_algo='ball_tree', verbose=False):
     """
-    Trains a k-nearest neighbors classifier for face recognition.
-    :param train_dir: directory that contains a sub-directory for each known person, with its name.
-     (View in source code to see train_dir example tree structure)
      Structure:
         <train_dir>/
         ├── <person1>/
