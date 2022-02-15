@@ -4,7 +4,7 @@ from skimage.feature import hog
 from skimage import exposure
 
 
-image = face_recognition.load_image_file("andip.jpg")
+image = face_recognition.load_image_file("cutting.PNG")
 
 fd, hog_image = hog(image, orientations=8, pixels_per_cell=(16, 16),
                     cells_per_block=(1, 1), visualize=True, multichannel=True)
@@ -22,3 +22,4 @@ ax2.axis('off')
 ax2.imshow(hog_image_rescaled, cmap=plt.cm.gray)
 ax2.set_title('Histogram of Oriented Gradients')
 plt.show()
+

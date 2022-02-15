@@ -12,15 +12,15 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 def train(train_dir, model_save_path=None, n_neighbors=None, knn_algo='ball_tree', verbose=False):
     """
-    Struktu Folder Training untuk Label
+    Struktur Folder Training untuk Label
         <train_dir>/
         ├── <person1>/
-        │   ├── <somename1>.jpeg
-        │   ├── <somename2>.jpeg
+        │   ├── <person1_1>.jpeg
+        │   ├── <person1_2>.jpeg
         │   ├── ...
         ├── <person2>/
-        │   ├── <somename1>.jpeg
-        │   └── <somename2>.jpeg
+        │   ├── <person2_1>.jpeg
+        │   └── <person2_2>.jpeg
         └── ...
     :param model_save_path: (optional) path to save model on disk
     :param n_neighbors: (optional) number of neighbors to weigh in classification. Chosen automatically if not specified
